@@ -7,7 +7,7 @@ import {
   UserButton,
   useUser,
 } from "@clerk/nextjs";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import { ChevronLeftIcon, Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import {
@@ -23,12 +23,12 @@ import { MenuIcon } from "lucide-react";
 import schizologoonly from "@/images/schizologoonly.jpg";
 import schizologo from "@/images/schizologo.jpg";
 import Image from "next/image";
-import { useSidebar } from "./ui/sidebar";
+import { useSidebar } from "../ui/sidebar";
 
 function Header() {
   const { user } = useUser();
   const { setTheme } = useTheme();
-  const { toggleSidebar, open, isMobile} = useSidebar();
+  const { toggleSidebar, open, isMobile } = useSidebar();
 
   return (
     <header className="flex items-center justify-between p-4 border-b border-gray-200">
