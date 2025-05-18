@@ -24,6 +24,7 @@ import schizologoonly from "@/images/schizologoonly.jpg";
 import schizologo from "@/images/schizologo.jpg";
 import Image from "next/image";
 import { useSidebar } from "../ui/sidebar";
+import CreatePost from "../post/CreatePost";
 
 function Header() {
   const { user } = useUser();
@@ -59,6 +60,7 @@ function Header() {
 
       {/* Right SIde */}
       <div className="flex items-center gap-2">
+          <CreatePost />
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="outline" size="icon">

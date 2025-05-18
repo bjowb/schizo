@@ -1,6 +1,6 @@
 "use server";
 
-import { createSubreddit } from "@/sanity/lib/subreddit/createSubreddit";
+import { createSubreddit } from "@/sanity/lib/subreddits/createSubreddit";
 import { getUser } from "@/sanity/lib/user/getUser";
 
 export type ImageData = {
